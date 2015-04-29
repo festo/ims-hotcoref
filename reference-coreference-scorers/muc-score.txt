@@ -1,0 +1,891 @@
+version: 7.0
+(8oelb); part 265:
+Repe: 365, 365 1839
+Total key mentions: 40
+Total response mentions: 38
+Strictly correct identified mentions: 17
+Partially correct identified mentions: 0
+No identified: 23
+Invented: 22
+Recall: (4 / 29) 13.79%	Precision: (4 / 31) 12.9%	F1: 13.33%
+--------------------------------------------------------------------------
+(8oelb); part 240:
+Repe: 37, 37 48
+Total key mentions: 26
+Total response mentions: 19
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 15
+Invented: 9
+Recall: (3 / 16) 18.75%	Precision: (3 / 13) 23.07%	F1: 20.68%
+--------------------------------------------------------------------------
+(8oelb); part 59:
+Repe: 377, 378 1022
+Repe: 200, 204 3233
+Repe: 212, 212 3537
+Repe: 247, 250 3639
+Repe: 301, 305 1442
+Total key mentions: 42
+Total response mentions: 40
+Strictly correct identified mentions: 23
+Partially correct identified mentions: 0
+No identified: 19
+Invented: 22
+Recall: (3 / 33) 9.09%	Precision: (3 / 28) 10.71%	F1: 9.83%
+--------------------------------------------------------------------------
+(8oelb); part 247:
+Repe: 109, 111 2021
+Total key mentions: 32
+Total response mentions: 23
+Strictly correct identified mentions: 13
+Partially correct identified mentions: 0
+No identified: 19
+Invented: 11
+Recall: (3 / 22) 13.63%	Precision: (3 / 17) 17.64%	F1: 15.38%
+--------------------------------------------------------------------------
+(8oelb); part 206:
+Total key mentions: 26
+Total response mentions: 36
+Strictly correct identified mentions: 15
+Partially correct identified mentions: 0
+No identified: 11
+Invented: 21
+Recall: (5 / 16) 31.25%	Precision: (5 / 27) 18.51%	F1: 23.25%
+--------------------------------------------------------------------------
+(8oelb); part 233:
+Repe: 8, 8 34
+Repe: 12, 14 116
+Repe: 33, 35 1827
+Total key mentions: 39
+Total response mentions: 36
+Strictly correct identified mentions: 26
+Partially correct identified mentions: 0
+No identified: 13
+Invented: 13
+Recall: (11 / 30) 36.66%	Precision: (11 / 28) 39.28%	F1: 37.93%
+--------------------------------------------------------------------------
+(8oelb); part 140:
+Repe: 40, 41 810
+Repe: 63, 63 914
+Repe: 181, 182 1132
+Repe: 168, 170 3437
+Repe: 174, 175 3139
+Repe: 181, 182 3241
+Total key mentions: 40
+Total response mentions: 37
+Strictly correct identified mentions: 22
+Partially correct identified mentions: 0
+No identified: 18
+Invented: 21
+Recall: (5 / 30) 16.66%	Precision: (5 / 28) 17.85%	F1: 17.24%
+--------------------------------------------------------------------------
+(8oelb); part 43:
+Total key mentions: 25
+Total response mentions: 28
+Strictly correct identified mentions: 12
+Partially correct identified mentions: 0
+No identified: 13
+Invented: 16
+Recall: (4 / 17) 23.52%	Precision: (4 / 21) 19.04%	F1: 21.05%
+--------------------------------------------------------------------------
+(8oelb); part 281:
+Repe: 94, 94 713
+Repe: 149, 151 925
+Repe: 156, 157 2127
+Total key mentions: 37
+Total response mentions: 42
+Strictly correct identified mentions: 25
+Partially correct identified mentions: 0
+No identified: 12
+Invented: 20
+Recall: (10 / 28) 35.71%	Precision: (10 / 31) 32.25%	F1: 33.89%
+--------------------------------------------------------------------------
+(8oelb); part 157:
+Total key mentions: 22
+Total response mentions: 31
+Strictly correct identified mentions: 15
+Partially correct identified mentions: 0
+No identified: 7
+Invented: 16
+Recall: (4 / 13) 30.76%	Precision: (4 / 22) 18.18%	F1: 22.85%
+--------------------------------------------------------------------------
+(8oelb); part 130:
+Repe: 62, 62 59
+Total key mentions: 26
+Total response mentions: 22
+Strictly correct identified mentions: 12
+Partially correct identified mentions: 0
+No identified: 14
+Invented: 11
+Recall: (4 / 19) 21.05%	Precision: (4 / 15) 26.66%	F1: 23.52%
+--------------------------------------------------------------------------
+(8oelb); part 299:
+Repe: 156, 157 1030
+Repe: 167, 168 1132
+Repe: 287, 288 4246
+Repe: 345, 347 1652
+Total key mentions: 51
+Total response mentions: 37
+Strictly correct identified mentions: 23
+Partially correct identified mentions: 0
+No identified: 28
+Invented: 18
+Recall: (5 / 38) 13.15%	Precision: (5 / 30) 16.66%	F1: 14.7%
+--------------------------------------------------------------------------
+(8oelb); part 259:
+Repe: 19, 19 312
+Repe: 100, 102 621
+Repe: 135, 137 725
+Repe: 176, 178 827
+Repe: 301, 301 3336
+Repe: 356, 356 3141
+Total key mentions: 37
+Total response mentions: 52
+Strictly correct identified mentions: 22
+Partially correct identified mentions: 0
+No identified: 15
+Invented: 36
+Recall: (6 / 27) 22.22%	Precision: (6 / 38) 15.78%	F1: 18.46%
+--------------------------------------------------------------------------
+(8oelb); part 133:
+Repe: 116, 117 2836
+Repe: 143, 145 3340
+Repe: 176, 177 4243
+Total key mentions: 51
+Total response mentions: 41
+Strictly correct identified mentions: 28
+Partially correct identified mentions: 0
+No identified: 23
+Invented: 16
+Recall: (9 / 36) 25%	Precision: (9 / 34) 26.47%	F1: 25.71%
+--------------------------------------------------------------------------
+(8oelb); part 112:
+Repe: 174, 174 519
+Repe: 216, 218 2528
+Total key mentions: 36
+Total response mentions: 61
+Strictly correct identified mentions: 18
+Partially correct identified mentions: 0
+No identified: 18
+Invented: 45
+Recall: (2 / 26) 7.69%	Precision: (2 / 47) 4.25%	F1: 5.47%
+--------------------------------------------------------------------------
+(8oelb); part 74:
+Repe: 31, 31 38
+Repe: 53, 53 416
+Repe: 111, 112 1525
+Repe: 179, 180 2738
+Total key mentions: 42
+Total response mentions: 38
+Strictly correct identified mentions: 23
+Partially correct identified mentions: 0
+No identified: 19
+Invented: 19
+Recall: (3 / 32) 9.37%	Precision: (3 / 28) 10.71%	F1: 9.99%
+--------------------------------------------------------------------------
+(8oelb); part 271:
+Repe: 195, 196 3233
+Repe: 234, 235 4143
+Total key mentions: 48
+Total response mentions: 51
+Strictly correct identified mentions: 22
+Partially correct identified mentions: 0
+No identified: 26
+Invented: 31
+Recall: (10 / 32) 31.25%	Precision: (10 / 39) 25.64%	F1: 28.16%
+--------------------------------------------------------------------------
+(10elb); part 42:
+Total key mentions: 9
+Total response mentions: 12
+Strictly correct identified mentions: 4
+Partially correct identified mentions: 0
+No identified: 5
+Invented: 8
+Recall: (1 / 6) 16.66%	Precision: (1 / 8) 12.5%	F1: 14.28%
+--------------------------------------------------------------------------
+(8oelb); part 31:
+Repe: 27, 27 58
+Repe: 138, 143 2122
+Repe: 184, 185 1035
+Total key mentions: 59
+Total response mentions: 45
+Strictly correct identified mentions: 27
+Partially correct identified mentions: 0
+No identified: 32
+Invented: 21
+Recall: (8 / 40) 20%	Precision: (8 / 40) 20%	F1: 20%
+--------------------------------------------------------------------------
+(8oelb); part 216:
+Repe: 80, 80 2025
+Repe: 121, 121 1827
+Repe: 126, 126 2129
+Repe: 262, 266 2250
+Total key mentions: 54
+Total response mentions: 46
+Strictly correct identified mentions: 31
+Partially correct identified mentions: 0
+No identified: 23
+Invented: 19
+Recall: (16 / 42) 38.09%	Precision: (16 / 37) 43.24%	F1: 40.5%
+--------------------------------------------------------------------------
+(8oelb); part 278:
+Repe: 151, 153 2426
+Total key mentions: 37
+Total response mentions: 30
+Strictly correct identified mentions: 16
+Partially correct identified mentions: 0
+No identified: 21
+Invented: 15
+Recall: (6 / 26) 23.07%	Precision: (6 / 24) 25%	F1: 24%
+--------------------------------------------------------------------------
+(8oelb); part 164:
+Repe: 56, 57 2025
+Repe: 183, 184 3637
+Total key mentions: 45
+Total response mentions: 52
+Strictly correct identified mentions: 24
+Partially correct identified mentions: 0
+No identified: 21
+Invented: 30
+Recall: (8 / 30) 26.66%	Precision: (8 / 42) 19.04%	F1: 22.22%
+--------------------------------------------------------------------------
+(10elb); part 30:
+Total key mentions: 41
+Total response mentions: 51
+Strictly correct identified mentions: 25
+Partially correct identified mentions: 0
+No identified: 16
+Invented: 26
+Recall: (9 / 25) 36%	Precision: (9 / 42) 21.42%	F1: 26.86%
+--------------------------------------------------------------------------
+(8oelb); part 272:
+Repe: 106, 108 1117
+Repe: 240, 241 1627
+Total key mentions: 27
+Total response mentions: 36
+Strictly correct identified mentions: 18
+Partially correct identified mentions: 0
+No identified: 9
+Invented: 20
+Recall: (5 / 19) 26.31%	Precision: (5 / 28) 17.85%	F1: 21.27%
+--------------------------------------------------------------------------
+(8oelb); part 100:
+Repe: 31, 32 710
+Total key mentions: 20
+Total response mentions: 22
+Strictly correct identified mentions: 10
+Partially correct identified mentions: 0
+No identified: 10
+Invented: 13
+Recall: (4 / 14) 28.57%	Precision: (4 / 18) 22.22%	F1: 25%
+--------------------------------------------------------------------------
+(8oelb); part 317:
+Repe: 106, 109 1622
+Repe: 120, 122 1924
+Repe: 158, 159 3240
+Repe: 203, 205 3544
+Total key mentions: 43
+Total response mentions: 44
+Strictly correct identified mentions: 23
+Partially correct identified mentions: 0
+No identified: 20
+Invented: 25
+Recall: (2 / 33) 6.06%	Precision: (2 / 33) 6.06%	F1: 6.06%
+--------------------------------------------------------------------------
+(10elb); part 13:
+Repe: 30, 31 421
+Repe: 77, 79 1132
+Repe: 95, 96 1236
+Repe: 258, 259 4855
+Repe: 387, 388 6871
+Total key mentions: 73
+Total response mentions: 73
+Strictly correct identified mentions: 47
+Partially correct identified mentions: 0
+No identified: 26
+Invented: 31
+Recall: (17 / 55) 30.9%	Precision: (17 / 63) 26.98%	F1: 28.81%
+--------------------------------------------------------------------------
+(8oelb); part 307:
+Repe: 53, 53 1617
+Repe: 61, 61 2223
+Repe: 89, 91 925
+Repe: 116, 118 1132
+Total key mentions: 47
+Total response mentions: 70
+Strictly correct identified mentions: 39
+Partially correct identified mentions: 0
+No identified: 8
+Invented: 35
+Recall: (14 / 34) 41.17%	Precision: (14 / 55) 25.45%	F1: 31.46%
+--------------------------------------------------------------------------
+(8oelb); part 205:
+Repe: 88, 89 924
+Repe: 94, 95 1026
+Total key mentions: 35
+Total response mentions: 30
+Strictly correct identified mentions: 18
+Partially correct identified mentions: 0
+No identified: 17
+Invented: 14
+Recall: (9 / 28) 32.14%	Precision: (9 / 25) 36%	F1: 33.96%
+--------------------------------------------------------------------------
+(8oelb); part 191:
+Repe: 36, 36 78
+Repe: 55, 56 316
+Repe: 142, 143 428
+Repe: 275, 276 3942
+Total key mentions: 40
+Total response mentions: 38
+Strictly correct identified mentions: 19
+Partially correct identified mentions: 0
+No identified: 21
+Invented: 23
+Recall: (9 / 30) 30%	Precision: (9 / 32) 28.12%	F1: 29.03%
+--------------------------------------------------------------------------
+(8oelb); part 225:
+Total key mentions: 35
+Total response mentions: 50
+Strictly correct identified mentions: 21
+Partially correct identified mentions: 0
+No identified: 14
+Invented: 29
+Recall: (6 / 21) 28.57%	Precision: (6 / 40) 15%	F1: 19.67%
+--------------------------------------------------------------------------
+(8oelb); part 308:
+Repe: 54, 55 1415
+Repe: 98, 101 2128
+Repe: 205, 208 2734
+Total key mentions: 41
+Total response mentions: 39
+Strictly correct identified mentions: 24
+Partially correct identified mentions: 0
+No identified: 17
+Invented: 18
+Recall: (12 / 33) 36.36%	Precision: (12 / 33) 36.36%	F1: 36.36%
+--------------------------------------------------------------------------
+(8oelb); part 175:
+Total key mentions: 45
+Total response mentions: 42
+Strictly correct identified mentions: 24
+Partially correct identified mentions: 0
+No identified: 21
+Invented: 18
+Recall: (13 / 30) 43.33%	Precision: (13 / 31) 41.93%	F1: 42.62%
+--------------------------------------------------------------------------
+(8oelb); part 251:
+Repe: 21, 23 12
+Repe: 210, 210 2729
+Total key mentions: 38
+Total response mentions: 35
+Strictly correct identified mentions: 22
+Partially correct identified mentions: 0
+No identified: 16
+Invented: 15
+Recall: (9 / 25) 36%	Precision: (9 / 24) 37.5%	F1: 36.73%
+--------------------------------------------------------------------------
+(8oelb); part 92:
+Repe: 112, 113 58
+Total key mentions: 36
+Total response mentions: 35
+Strictly correct identified mentions: 18
+Partially correct identified mentions: 0
+No identified: 18
+Invented: 18
+Recall: (7 / 24) 29.16%	Precision: (7 / 26) 26.92%	F1: 27.99%
+--------------------------------------------------------------------------
+(8oelb); part 34:
+Repe: 67, 68 1316
+Repe: 85, 85 1922
+Total key mentions: 27
+Total response mentions: 30
+Strictly correct identified mentions: 16
+Partially correct identified mentions: 0
+No identified: 11
+Invented: 16
+Recall: (7 / 20) 35%	Precision: (7 / 26) 26.92%	F1: 30.43%
+--------------------------------------------------------------------------
+(hvg); part 22:
+Total key mentions: 112
+Total response mentions: 192
+Strictly correct identified mentions: 60
+Partially correct identified mentions: 0
+No identified: 52
+Invented: 132
+Recall: (30 / 82) 36.58%	Precision: (30 / 162) 18.51%	F1: 24.59%
+--------------------------------------------------------------------------
+(10elb); part 32:
+Repe: 40, 40 1214
+Total key mentions: 41
+Total response mentions: 32
+Strictly correct identified mentions: 16
+Partially correct identified mentions: 0
+No identified: 25
+Invented: 17
+Recall: (4 / 33) 12.12%	Precision: (4 / 21) 19.04%	F1: 14.81%
+--------------------------------------------------------------------------
+(10elb); part 55:
+Repe: 37, 40 812
+Repe: 51, 53 914
+Repe: 59, 60 1519
+Repe: 99, 100 1728
+Repe: 228, 229 1147
+Total key mentions: 48
+Total response mentions: 54
+Strictly correct identified mentions: 24
+Partially correct identified mentions: 0
+No identified: 24
+Invented: 35
+Recall: (5 / 35) 14.28%	Precision: (5 / 43) 11.62%	F1: 12.82%
+--------------------------------------------------------------------------
+(8oelb); part 230:
+Repe: 12, 13 15
+Repe: 102, 103 1119
+Repe: 139, 141 2327
+Repe: 276, 276 1337
+Total key mentions: 35
+Total response mentions: 40
+Strictly correct identified mentions: 21
+Partially correct identified mentions: 0
+No identified: 14
+Invented: 23
+Recall: (7 / 27) 25.92%	Precision: (7 / 35) 20%	F1: 22.58%
+--------------------------------------------------------------------------
+(8oelb); part 98:
+Total key mentions: 24
+Total response mentions: 19
+Strictly correct identified mentions: 13
+Partially correct identified mentions: 0
+No identified: 11
+Invented: 6
+Recall: (5 / 14) 35.71%	Precision: (5 / 15) 33.33%	F1: 34.48%
+--------------------------------------------------------------------------
+(8oelb); part 110:
+Repe: 123, 124 2224
+Total key mentions: 36
+Total response mentions: 47
+Strictly correct identified mentions: 22
+Partially correct identified mentions: 0
+No identified: 14
+Invented: 26
+Recall: (8 / 25) 32%	Precision: (8 / 36) 22.22%	F1: 26.22%
+--------------------------------------------------------------------------
+(8oelb); part 219:
+Repe: 10, 12 69
+Repe: 35, 36 1222
+Total key mentions: 42
+Total response mentions: 39
+Strictly correct identified mentions: 29
+Partially correct identified mentions: 0
+No identified: 13
+Invented: 12
+Recall: (16 / 32) 50%	Precision: (16 / 32) 50%	F1: 50%
+--------------------------------------------------------------------------
+(hvg); part 1:
+Total key mentions: 126
+Total response mentions: 239
+Strictly correct identified mentions: 74
+Partially correct identified mentions: 0
+No identified: 52
+Invented: 165
+Recall: (38 / 101) 37.62%	Precision: (38 / 196) 19.38%	F1: 25.58%
+--------------------------------------------------------------------------
+(8oelb); part 167:
+Total key mentions: 24
+Total response mentions: 28
+Strictly correct identified mentions: 10
+Partially correct identified mentions: 0
+No identified: 14
+Invented: 18
+Recall: (0 / 14) 0%	Precision: (0 / 24) 0%	F1: 0%
+--------------------------------------------------------------------------
+(8oelb); part 166:
+Repe: 181, 181 3061
+Total key mentions: 99
+Total response mentions: 101
+Strictly correct identified mentions: 57
+Partially correct identified mentions: 0
+No identified: 42
+Invented: 45
+Recall: (25 / 81) 30.86%	Precision: (25 / 86) 29.06%	F1: 29.94%
+--------------------------------------------------------------------------
+(8oelb); part 258:
+Repe: 13, 16 27
+Repe: 331, 333 4249
+Repe: 340, 344 4352
+Repe: 348, 349 5363
+Repe: 360, 361 5565
+Total key mentions: 73
+Total response mentions: 80
+Strictly correct identified mentions: 38
+Partially correct identified mentions: 0
+No identified: 35
+Invented: 47
+Recall: (13 / 53) 24.52%	Precision: (13 / 61) 21.31%	F1: 22.8%
+--------------------------------------------------------------------------
+(8oelb); part 137:
+Repe: 13, 15 59
+Repe: 84, 86 615
+Total key mentions: 24
+Total response mentions: 20
+Strictly correct identified mentions: 12
+Partially correct identified mentions: 0
+No identified: 12
+Invented: 10
+Recall: (5 / 15) 33.33%	Precision: (5 / 17) 29.41%	F1: 31.25%
+--------------------------------------------------------------------------
+(8oelb); part 195:
+Repe: 49, 50 715
+Repe: 62, 63 1422
+Total key mentions: 28
+Total response mentions: 32
+Strictly correct identified mentions: 20
+Partially correct identified mentions: 0
+No identified: 8
+Invented: 14
+Recall: (9 / 21) 42.85%	Precision: (9 / 26) 34.61%	F1: 38.29%
+--------------------------------------------------------------------------
+(8oelb); part 44:
+Total key mentions: 12
+Total response mentions: 19
+Strictly correct identified mentions: 6
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 13
+Recall: (1 / 8) 12.5%	Precision: (1 / 11) 9.09%	F1: 10.52%
+--------------------------------------------------------------------------
+(8oelb); part 143:
+Repe: 87, 88 1112
+Repe: 108, 108 1618
+Repe: 201, 203 2431
+Repe: 295, 295 3043
+Repe: 362, 364 5155
+Total key mentions: 52
+Total response mentions: 58
+Strictly correct identified mentions: 28
+Partially correct identified mentions: 0
+No identified: 24
+Invented: 35
+Recall: (10 / 36) 27.77%	Precision: (10 / 48) 20.83%	F1: 23.8%
+--------------------------------------------------------------------------
+(8oelb); part 35:
+Repe: 39, 39 710
+Repe: 50, 50 514
+Total key mentions: 18
+Total response mentions: 9
+Strictly correct identified mentions: 6
+Partially correct identified mentions: 0
+No identified: 12
+Invented: 5
+Recall: (1 / 11) 9.09%	Precision: (1 / 5) 20%	F1: 12.5%
+--------------------------------------------------------------------------
+(hvg); part 19:
+Total key mentions: 34
+Total response mentions: 42
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 23
+Invented: 31
+Recall: (3 / 25) 12%	Precision: (3 / 33) 9.09%	F1: 10.34%
+--------------------------------------------------------------------------
+(8oelb); part 8:
+Repe: 93, 94 1723
+Repe: 93, 94 2327
+Repe: 194, 194 2245
+Total key mentions: 66
+Total response mentions: 64
+Strictly correct identified mentions: 38
+Partially correct identified mentions: 0
+No identified: 28
+Invented: 29
+Recall: (20 / 49) 40.81%	Precision: (20 / 53) 37.73%	F1: 39.21%
+--------------------------------------------------------------------------
+(8oelb); part 159:
+Repe: 98, 98 317
+Repe: 131, 132 2122
+Total key mentions: 26
+Total response mentions: 31
+Strictly correct identified mentions: 13
+Partially correct identified mentions: 0
+No identified: 13
+Invented: 20
+Recall: (1 / 18) 5.55%	Precision: (1 / 25) 4%	F1: 4.65%
+--------------------------------------------------------------------------
+(8oelb); part 201:
+Repe: 17, 17 56
+Repe: 99, 100 1017
+Repe: 124, 128 1127
+Total key mentions: 43
+Total response mentions: 54
+Strictly correct identified mentions: 30
+Partially correct identified mentions: 0
+No identified: 13
+Invented: 27
+Recall: (13 / 32) 40.62%	Precision: (13 / 43) 30.23%	F1: 34.66%
+--------------------------------------------------------------------------
+(8oelb); part 4:
+Repe: 5, 5 05
+Repe: 8, 8 17
+Repe: 58, 58 325
+Repe: 106, 106 3031
+Repe: 188, 188 638
+Total key mentions: 36
+Total response mentions: 38
+Strictly correct identified mentions: 8
+Partially correct identified mentions: 0
+No identified: 28
+Invented: 35
+Recall: (1 / 27) 3.7%	Precision: (1 / 31) 3.22%	F1: 3.44%
+--------------------------------------------------------------------------
+(8oelb); part 208:
+Repe: 95, 96 1113
+Repe: 104, 106 515
+Total key mentions: 43
+Total response mentions: 47
+Strictly correct identified mentions: 27
+Partially correct identified mentions: 0
+No identified: 16
+Invented: 22
+Recall: (14 / 32) 43.75%	Precision: (14 / 40) 35%	F1: 38.88%
+--------------------------------------------------------------------------
+(8oelb); part 30:
+Repe: 109, 109 2231
+Repe: 113, 115 1633
+Repe: 174, 175 3940
+Repe: 190, 191 2842
+Repe: 249, 250 2448
+Repe: 295, 297 2953
+Total key mentions: 64
+Total response mentions: 57
+Strictly correct identified mentions: 33
+Partially correct identified mentions: 0
+No identified: 31
+Invented: 30
+Recall: (13 / 46) 28.26%	Precision: (13 / 46) 28.26%	F1: 28.26%
+--------------------------------------------------------------------------
+(8oelb); part 57:
+Repe: 13, 15 29
+Repe: 191, 192 2235
+Repe: 316, 318 2755
+Total key mentions: 70
+Total response mentions: 59
+Strictly correct identified mentions: 30
+Partially correct identified mentions: 0
+No identified: 40
+Invented: 32
+Recall: (10 / 54) 18.51%	Precision: (10 / 47) 21.27%	F1: 19.8%
+--------------------------------------------------------------------------
+(8oelb); part 255:
+Repe: 39, 40 58
+Total key mentions: 45
+Total response mentions: 70
+Strictly correct identified mentions: 30
+Partially correct identified mentions: 0
+No identified: 15
+Invented: 41
+Recall: (13 / 32) 40.62%	Precision: (13 / 62) 20.96%	F1: 27.65%
+--------------------------------------------------------------------------
+(8oelb); part 292:
+Repe: 138, 139 3039
+Total key mentions: 45
+Total response mentions: 30
+Strictly correct identified mentions: 21
+Partially correct identified mentions: 0
+No identified: 24
+Invented: 10
+Recall: (9 / 33) 27.27%	Precision: (9 / 24) 37.5%	F1: 31.57%
+--------------------------------------------------------------------------
+(8oelb); part 183:
+Total key mentions: 16
+Total response mentions: 38
+Strictly correct identified mentions: 9
+Partially correct identified mentions: 0
+No identified: 7
+Invented: 29
+Recall: (2 / 9) 22.22%	Precision: (2 / 28) 7.14%	F1: 10.81%
+--------------------------------------------------------------------------
+(10elb); part 8:
+Repe: 93, 94 1217
+Repe: 147, 148 2021
+Total key mentions: 41
+Total response mentions: 74
+Strictly correct identified mentions: 26
+Partially correct identified mentions: 0
+No identified: 15
+Invented: 50
+Recall: (7 / 29) 24.13%	Precision: (7 / 59) 11.86%	F1: 15.9%
+--------------------------------------------------------------------------
+(8oelb); part 78:
+Repe: 67, 69 39
+Repe: 76, 76 411
+Repe: 93, 99 1316
+Total key mentions: 22
+Total response mentions: 25
+Strictly correct identified mentions: 13
+Partially correct identified mentions: 0
+No identified: 9
+Invented: 15
+Recall: (3 / 17) 17.64%	Precision: (3 / 19) 15.78%	F1: 16.66%
+--------------------------------------------------------------------------
+(8oelb); part 234:
+Total key mentions: 24
+Total response mentions: 34
+Strictly correct identified mentions: 20
+Partially correct identified mentions: 0
+No identified: 4
+Invented: 14
+Recall: (10 / 18) 55.55%	Precision: (10 / 28) 35.71%	F1: 43.47%
+--------------------------------------------------------------------------
+(10elb); part 4:
+Repe: 40, 41 89
+Repe: 160, 161 2122
+Total key mentions: 32
+Total response mentions: 36
+Strictly correct identified mentions: 23
+Partially correct identified mentions: 0
+No identified: 9
+Invented: 15
+Recall: (7 / 21) 33.33%	Precision: (7 / 26) 26.92%	F1: 29.78%
+--------------------------------------------------------------------------
+(10elb); part 38:
+Repe: 57, 58 914
+Repe: 76, 77 1823
+Repe: 114, 115 628
+Repe: 145, 146 3233
+Repe: 155, 157 1035
+Repe: 194, 195 2946
+Total key mentions: 44
+Total response mentions: 52
+Strictly correct identified mentions: 33
+Partially correct identified mentions: 0
+No identified: 11
+Invented: 25
+Recall: (12 / 36) 33.33%	Precision: (12 / 43) 27.9%	F1: 30.37%
+--------------------------------------------------------------------------
+(8oelb); part 297:
+Total key mentions: 41
+Total response mentions: 38
+Strictly correct identified mentions: 27
+Partially correct identified mentions: 0
+No identified: 14
+Invented: 11
+Recall: (18 / 33) 54.54%	Precision: (18 / 31) 58.06%	F1: 56.25%
+--------------------------------------------------------------------------
+(hvg); part 7:
+Total key mentions: 10
+Total response mentions: 22
+Strictly correct identified mentions: 4
+Partially correct identified mentions: 0
+No identified: 6
+Invented: 18
+Recall: (2 / 5) 40%	Precision: (2 / 14) 14.28%	F1: 21.05%
+--------------------------------------------------------------------------
+(8oelb); part 104:
+Repe: 53, 54 114
+Repe: 99, 100 1119
+Repe: 125, 126 323
+Total key mentions: 22
+Total response mentions: 28
+Strictly correct identified mentions: 18
+Partially correct identified mentions: 0
+No identified: 4
+Invented: 13
+Recall: (6 / 16) 37.5%	Precision: (6 / 23) 26.08%	F1: 30.76%
+--------------------------------------------------------------------------
+(8oelb); part 25:
+Repe: 58, 59 3844
+Repe: 68, 69 4751
+Repe: 271, 274 4272
+Total key mentions: 83
+Total response mentions: 61
+Strictly correct identified mentions: 35
+Partially correct identified mentions: 0
+No identified: 48
+Invented: 29
+Recall: (12 / 66) 18.18%	Precision: (12 / 44) 27.27%	F1: 21.81%
+--------------------------------------------------------------------------
+(8oelb); part 186:
+Repe: 40, 40 3334
+Total key mentions: 60
+Total response mentions: 58
+Strictly correct identified mentions: 39
+Partially correct identified mentions: 0
+No identified: 21
+Invented: 20
+Recall: (20 / 46) 43.47%	Precision: (20 / 45) 44.44%	F1: 43.95%
+--------------------------------------------------------------------------
+(8oelb); part 50:
+Repe: 86, 87 910
+Repe: 167, 170 1323
+Total key mentions: 26
+Total response mentions: 33
+Strictly correct identified mentions: 14
+Partially correct identified mentions: 0
+No identified: 12
+Invented: 21
+Recall: (4 / 18) 22.22%	Precision: (4 / 22) 18.18%	F1: 19.99%
+--------------------------------------------------------------------------
+(8oelb); part 45:
+Repe: 219, 220 1531
+Total key mentions: 36
+Total response mentions: 36
+Strictly correct identified mentions: 18
+Partially correct identified mentions: 0
+No identified: 18
+Invented: 19
+Recall: (7 / 28) 25%	Precision: (7 / 28) 25%	F1: 25%
+--------------------------------------------------------------------------
+(8oelb); part 295:
+Repe: 300, 300 3846
+Total key mentions: 51
+Total response mentions: 39
+Strictly correct identified mentions: 18
+Partially correct identified mentions: 0
+No identified: 33
+Invented: 22
+Recall: (2 / 34) 5.88%	Precision: (2 / 29) 6.89%	F1: 6.34%
+--------------------------------------------------------------------------
+(8oelb); part 63:
+Total key mentions: 30
+Total response mentions: 27
+Strictly correct identified mentions: 13
+Partially correct identified mentions: 0
+No identified: 17
+Invented: 14
+Recall: (2 / 19) 10.52%	Precision: (2 / 19) 10.52%	F1: 10.52%
+--------------------------------------------------------------------------
+(8oelb); part 188:
+Repe: 12, 14 310
+Total key mentions: 38
+Total response mentions: 32
+Strictly correct identified mentions: 10
+Partially correct identified mentions: 0
+No identified: 28
+Invented: 23
+Recall: (3 / 30) 10%	Precision: (3 / 23) 13.04%	F1: 11.32%
+--------------------------------------------------------------------------
+(8oelb); part 228:
+Total key mentions: 32
+Total response mentions: 38
+Strictly correct identified mentions: 21
+Partially correct identified mentions: 0
+No identified: 11
+Invented: 17
+Recall: (8 / 22) 36.36%	Precision: (8 / 29) 27.58%	F1: 31.37%
+--------------------------------------------------------------------------
+(8oelb); part 309:
+Repe: 51, 53 38
+Total key mentions: 25
+Total response mentions: 16
+Strictly correct identified mentions: 11
+Partially correct identified mentions: 0
+No identified: 14
+Invented: 6
+Recall: (3 / 19) 15.78%	Precision: (3 / 13) 23.07%	F1: 18.74%
+--------------------------------------------------------------------------
+
+====== TOTALS =======
+Identification of Mentions: Recall: (1782 / 3271) 54.47%	Precision: (1782 / 3600) 49.5%	F1: 51.87%
+--------------------------------------------------------------------------
+Coreference: Recall: (655 / 2381) 27.5%	Precision: (655 / 2849) 22.99%	F1: 25.04%
+--------------------------------------------------------------------------

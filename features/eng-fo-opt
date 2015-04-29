@@ -1,0 +1,38 @@
+MToHdForm+MFromHdForm                                           32
+MToSFForm                                                       16
+MFromMToDistanceBuckets+MToMTypeCoarse                                  7
+MFromMToSameSpeaker+MFromPronounForm+MToPronounForm                     34
+MFromWholeSpanForm                                              18
+MFromMToCFGSSPath+MToPronounForm                                        35
+MFromCFGParentNodeCategory                                      7
+MFromNodeCFGSubCat+MFromMToNested                                       16
+Genre+MFromMToNested                                                    6
+MFromWholeSpanForm+MToWholeSpanForm                             36
+MFromSFoPos                                                     6
+MToSFoPos+MFromSFForm                                           22
+MFromHdPos+MToPronounForm                                       22
+MToSFForm+MFromHdForm                                           32
+MFromParentNodeCFGSubCat                                        14
+MFromSPrForm+MToHdForm                                          32
+MFromMToCleverStringMatch+MFromMTypeCoarse                              5
+MFromMToNested+MToMTypeCoarse                                           5
+MFromMToDistanceBuckets+MToPronounForm                                  20
+Genre+MFromPronounForm+MToPronounForm                           36
+MFromHdINForm+MFromHdPos                                        22
+MFromSFoPos+MToPronounForm                                      22
+MFromGender+MToPronounForm                                      19
+MFromMToMentionDistBuckets+MToMTypeCoarse                               7
+MFromMToCleverStringMatch+MFromMTypeCoarse+MFromHdForm+MToHdForm        37
+MFromMTypeCoarse+MToAnaphoricity
+MToGender+MFromPronounForm
+MFromMToCFGSSPosPath
+MToHdIPPPos+MToHdForm
+MToParentNodeCFGSubCat+MFromMToMentionDistBuckets+MFromMTypeCoarse
+MFromMToCleverStringMatch+MToMTypeCoarse+MFromHdForm+MToHdForm
+MFromSFForm+MToHdForm
+MFromMToMentionDistBuckets+MFromMTypeCoarse
+MToNodeCFGSubCat+MFromMToNested
+MToHdFormMFromSubStringMatch+MToMTypeCoarse+MFromMTypeCoarse
+MFromHdFormMToSubStringMatch+MToMTypeCoarse+MFromMTypeCoarse
+MToHdFormMFromSubStringMatch+MFromHdFormMToSubStringMatch+MToMTypeCoarse+MFromMTypeCoarse
+MToCoordinationBOW

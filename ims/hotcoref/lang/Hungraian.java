@@ -84,71 +84,6 @@ public class Hungraian extends Language{
 		};
 		return FeatureSet.getFromNameArray(names);
 	}
-//	@Override
-//	public FeatureSet getDefaultFeatureSet() {
-//		String[] names={
-//				"AntecedentHdForm+AnaphorHdForm",
-//				"AnaphorDemonstrative",
-//				"CleverStringMatch",
-//				"Alias",
-//				"DistanceBucketed+AnaphorPronoun",
-//				"SameSpeaker+AntecedentPronounForm+AnaphorPronounForm",
-//				"AntecedentWholeSpanForm",
-//				"CFGSSPath+AnaphorPronounForm",
-//				"AntecedentCFGParentCategory",
-//				"AntecedentCFGSubCat+Nested",
-//				"Genre+Nested",
-//				"AntecedentSPrForm",
-//				"CFGDSFormPath",
-//				"AnaphorWholeSpanForm+AntecedentWholeSpanForm",
-//				"AntecedentSFoPos",
-//				"AnaphorSFPos+AntecedentSFForm",
-//				"AntecedentHdPos+AnaphorPronounForm",
-//				"AnaphorSFForm+AntecedentHdForm",
-//				"AntecedentCFGParentSubCat",
-//				"AntecedentSPrForm+AnaphorHdForm",
-//				"AntecedentCFGParentSubCat+AnaphorPronounForm",
-//				"CleverStringMatch+AntecedentProperName",
-//				"Nested+AnaphorPronoun",
-//				"DistanceBucketed+AnaphorPronounForm",
-//				"CFGSSPosPath",
-//				"Genre+AntecedentPronounForm+AnaphorPronounForm",
-//				"AntecedentHdINForm+AntecedentHdPos",
-//				"AntecedentSFoPos+AnaphorPronounForm",
-//				"AntecedentGender+AnaphorPronounForm",
-//				"MentionDistBuckets+AnaphorPronoun",
-//				"AntecedentCFGParentSubCat+MentionDistBuckets+AnaphorPronoun",
-//				"CleverStringMatch+AntecedentProperName+AntecedentHdForm+AnaphorHdForm",
-//				"AntecedentNamedEntity",
-//				"AnaphorQuoted+AnaphorPronounForm+AntecedentDominatingVerb",
-////				"AnaphorAnaphoricity+AnaphorPronounForm",
-////				"AntecedentAnaphoricity+AntecedentPronounForm",
-//
-//		};
-////		String[] names={
-////				"AntecedentHdForm+AnaphorHdForm",
-////				"AnaphorDemonstrative",
-////				"CleverStringMatch",
-////				"Alias",
-////				"DistanceBucketed+AnaphorPronoun",
-////				"SameSpeaker+AntecedentPronounForm+AnaphorPronounForm",
-////				"AntecedentWholeSpanForm",
-////				"CFGSSPath+AnaphorPronounForm",
-////				"AntecedentCFGParentCategory",
-////				"CFGDSPath+AnaphorPronoun",
-////				"AntecedentCFGSubCat+Nested",
-////				"Genre+Nested",
-////				"AntecedentGender+AnaphorGender",
-////				"AntecedentSPrForm",
-////				"CFGDSFormPath",
-////				"AnaphorWholeSpanForm+AntecedentWholeSpanForm",
-////				"AntecedentSFoPos",
-////				"AnaphorSFPos+AntecedentSFForm",
-////				"AntecedentHdPos+AnaphorPronounForm",
-////				"AnaphorSFForm+AntecedentHdForm",
-////				"AntecedentCFGParentSubCat"};
-//		return FeatureSet.getFromNameArray(names);
-//	}
 
 	@Override
 	public boolean cleverStringMatch(Span ant,Span ana) {
@@ -271,11 +206,12 @@ public class Hungraian extends Language{
 		return DEMONSTRATIVE_PATTERN.matcher(s.s.forms[s.start]).matches();
 	}
 
+	private static final Pattern DEFINITE_PATTERN=Pattern.compile("^a(?:z)$",Pattern.CASE_INSENSITIVE);
 	private boolean isDefinite(Span s) {
 		int len=s.end-s.start+1;
 		if(len==1)
 			return false;
-		return s.s.forms[s.start].equalsIgnoreCase("the");
+		return DEFINITE_PATTERN.matcher(s.s.forms[s.start]).matches();
 	}
 
 	private boolean isProperName(Span s) {

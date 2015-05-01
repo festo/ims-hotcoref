@@ -96,7 +96,7 @@ public class Hungraian extends Language{
 	public String computeCleverString(Span sp) {
 		StringBuilder sb=new StringBuilder();
 		for(int i=sp.start;i<=sp.end;++i){
-			if(sp.s.forms[i].equals("\"") || sp.s.tags[i].startsWith("T") ||sp.s.forms[i].equals(":") ||sp.s.forms[i].equals(".")||sp.s.forms[i].equals(","))
+			if(sp.s.forms[i].equals("\"") ||sp.s.forms[i].equals(":") ||sp.s.forms[i].equals(".")||sp.s.forms[i].equals(","))
 				continue;
 			sb.append(sp.s.forms[i]).append(" ");
 		}
@@ -117,11 +117,6 @@ public class Hungraian extends Language{
 		s.gender=lookupGender(s);
 		s.number=lookupNumber(s);
 		s.isQuoted=isQuoted(s);
-		if(!s.isPronoun){
-			WordNetInterface wni=WordNetInterface.theInstance();
-			if(wni!=null)
-				s.semanticClass=wni.lookupSemanticClass(s.s.forms[s.hd]);
-		}
 	}
 
 	private boolean isQuoted(Span s) {
@@ -182,10 +177,7 @@ public class Hungraian extends Language{
 				if(!s.s.tags[i].startsWith("N##SubPOS=p"))
 					return false;
 			}
-			if(s.s.tags[s.end].startsWith("N##SubPOS=p")) // NNP = N##SubPOS=p
-				return true;
-			else
-				return false;
+			return true;
 		} else {
 			return s.s.tags[s.start].startsWith("N##SubPOS=p");
 		}
@@ -241,24 +233,17 @@ public class Hungraian extends Language{
 			"ennyi", "ugyanennyi", "emennyi", "annyi", "ugyanannyi", "amannyi"
 	};
 
-	private static final Set<String> PERSONAL_PRONOUNS_SET=new HashSet<String>();
-
 	private static final Set<String> SINGULAR_PERSONAL_PRONOUNS_SET=new HashSet<String>();
 	private static final Set<String> PLURAL_PERSONAL_PRONOUNS_SET=new HashSet<String>();
 
 
-	private static final Set<String> REFLEXIVE_PRONOUNS_SET=new HashSet<String>();
 	private static final Set<String> DEMONSTRATIVE_PRONOUNS_SET=new HashSet<String>();
 
 	public static final Set<String> ALL_PRONOUNS=new HashSet<String>();
 	static {
-		Collections.addAll(PERSONAL_PRONOUNS_SET,SINGULAR_PERSONAL_PRONOUNS);
-		Collections.addAll(PERSONAL_PRONOUNS_SET,PLURAL_PERSONAL_PRONOUNS);
-
 		Collections.addAll(SINGULAR_PERSONAL_PRONOUNS_SET,SINGULAR_PERSONAL_PRONOUNS);
 		Collections.addAll(PLURAL_PERSONAL_PRONOUNS_SET,PLURAL_PERSONAL_PRONOUNS);
 
-		Collections.addAll(REFLEXIVE_PRONOUNS_SET,REFLEXIVE_PRONOUNS);
 		Collections.addAll(DEMONSTRATIVE_PRONOUNS_SET,DEMONSTRATIVE_PRONOUNS);
 
 		//All below
@@ -411,7 +396,7 @@ public class Hungraian extends Language{
 	}
 	@Override
 	public String getDefaultMarkableExtractors() {
-		return "NT-NP,T-PRP,T-PRP$,NER-ALL"; //,NonReferential,SameHeadPruner";
+		return "NT-NP,T-PRP,T-PRP$,NER-ALL";
 	}
 
 	public void preprocessSentence(Sentence s){

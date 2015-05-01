@@ -113,53 +113,6 @@ public class Hungraian extends Language{
 		s.isProperName=isProperName(s);
 		s.isPronoun=isPronoun(s);
 		s.isDefinite=isDefinite(s);
-		s.isDemonstrative=isDemonstrative(s);
-		s.gender=lookupGender(s);
-		s.number=lookupNumber(s);
-		s.isQuoted=isQuoted(s);
-	}
-
-	private boolean isQuoted(Span s) {
-		boolean quoteBegin=false;
-		boolean quoteEnd=false;
-		for(int i=s.start-1;i>0;--i){
-			if(s.s.forms[i].equals("\"")){
-				quoteBegin=true;
-				break;
-			}
-		}
-		if(!quoteBegin)
-			return false;
-		for(int i=s.end+1;i<s.s.forms.length;++i){
-			if(s.s.forms[i].equals("\"")){
-				quoteEnd=true;
-				break;
-			}
-		}
-		return quoteBegin && quoteEnd;
-	}
-
-	private Num lookupNumber(Span s) {
-		if(s.isPronoun){
-			String formLc=s.s.forms[s.start].toLowerCase();
-			if(SINGULAR_PERSONAL_PRONOUNS_SET.contains(formLc))
-				return Num.Sin;
-			if(PLURAL_PERSONAL_PRONOUNS_SET.contains(formLc))
-				return Num.Plu;
-		}
-		return lookup.lookupNum(s);
-	}
-
-	private Gender lookupGender(Span s) {
-		return lookup.lookupGen(s);
-	}
-
-	private boolean isDemonstrative(Span s) {
-		int len=s.end-s.start+1;
-		if(len==1)
-			return false;
-		String formLc=s.s.forms[s.start].toLowerCase();
-		return DEMONSTRATIVE_PRONOUNS_SET.contains(formLc);
 	}
 
 	private static final Pattern DEFINITE_PATTERN=Pattern.compile("^a(?:z)$",Pattern.CASE_INSENSITIVE);

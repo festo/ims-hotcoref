@@ -127,14 +127,12 @@ public class Hungraian extends Language{
 				s.semanticClass=wni.lookupSemanticClass(s.s.forms[s.hd]);
 		}
 	}
-	
+
 	private boolean isQuoted(Span s) {
 		boolean quoteBegin=false;
 		boolean quoteEnd=false;
 		for(int i=s.start-1;i>0;--i){
-			if(s.s.tags[i].equals("''"))
-				return false;
-			if(s.s.tags[i].equals("``")){
+			if(s.s.forms[i].equals("\"")){
 				quoteBegin=true;
 				break;
 			}
@@ -142,9 +140,7 @@ public class Hungraian extends Language{
 		if(!quoteBegin)
 			return false;
 		for(int i=s.end+1;i<s.s.forms.length;++i){
-			if(s.s.tags[i].equals("``"))
-				return false;
-			if(s.s.tags[i].equals("''")){
+			if(s.s.forms[i].equals("\"")){
 				quoteEnd=true;
 				break;
 			}

@@ -210,17 +210,14 @@ public class Hungraian extends Language{
 
 	private boolean isProperName(Span s) {
 		int len=s.end-s.start+1;
-		if(len>1){
+		if(len>1) {
 			for(int i=s.start;i<s.end;++i){
-				if(!s.s.tags[i].startsWith("NNP"))
+				if(!s.s.tags[i].startsWith("N##SubPOS=p"))
 					return false;
 			}
-			if(s.s.tags[s.end].equals("POS") || s.s.tags[s.end].startsWith("NNP"))
-				return true;
-			else
-				return false;
+			return true;
 		} else {
-			return s.s.tags[s.start].startsWith("NNP");
+			return s.s.tags[s.start].startsWith("N##SubPOS=p");
 		}
 	}
 

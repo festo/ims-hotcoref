@@ -113,6 +113,15 @@ public class Hungraian extends Language{
 		s.isProperName=isProperName(s);
 		s.isPronoun=isPronoun(s);
 		s.isDefinite=isDefinite(s);
+		s.isQuoted = isMentionByWordClass(s);
+	}
+
+	private boolean isMentionByWordClass(Span s) {
+		return 	s.s.tags[s.hd].startsWith("N") ||
+				s.s.tags[s.hd].startsWith("P") ||
+				s.s.tags[s.hd].startsWith("M") ||
+				s.s.tags[s.hd].startsWith("A") ||
+				s.s.tags[s.hd].startsWith("R##SubPOS=l");
 	}
 
 	private static final Pattern DEFINITE_PATTERN=Pattern.compile("^a(?:z)$",Pattern.CASE_INSENSITIVE);

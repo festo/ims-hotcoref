@@ -160,11 +160,11 @@ public class Hungraian extends Language{
 	private Num lookupNumber(Span s) {
 		if(s.isPronoun){
 			String formLc=s.s.forms[s.start].toLowerCase();
-			if(SINGULAR_PRONOUNS_SET.contains(formLc))
+			if(SINGULAR_PERSONAL_PRONOUNS_SET.contains(formLc))
 				return Num.Sin;
-			if(PLURAL_PRONOUNS_SET.contains(formLc))
+			if(PLURAL_PERSONAL_PRONOUNS_SET.contains(formLc))
 				return Num.Plu;
-		} 
+		}
 		return lookup.lookupNum(s);
 	}
 
@@ -234,7 +234,46 @@ public class Hungraian extends Language{
 //			return false;
 //		}
 	}
-	
+
+	// Szemelyes nevmasok
+	private static final String[] SINGULAR_PERSONAL_PRONOUNS=new String[]{
+			"én","te","ő",
+			"engem", "téged", "őt",
+			"nekem", "neked", "neki",
+			"velem", "veled", "vele",
+			"értem", "érted", "érte",
+			"bennem", "benned", "benne",
+			"belém", "beléd", "belé",
+			"belőlem", "belőled", "belőle",
+			"nálam", "nálad", "nála",
+			"hozzám", "hozzád", "hozzá",
+			"tőlem", "tőled", "tőle",
+			"rajtam", "rajtad", "rajta",
+			"rám", "rád", "rá",
+			"rólam", "rólad", "róla"
+	};
+
+	private static final String[] PLURAL_PERSONAL_PRONOUNS=new String[]{
+			"mi","ti","ők",
+			"minket", "titeket", "őket",
+			"nekünk", "nektek", "nekik",
+			"velünk", "veletek", "velük",
+			"értünk", "értetek", "értük",
+			"bennünk", "bennetek", "bennük",
+			"belénk", "belétek", "beléjük",
+			"belőlünk", "belőletek", "belőlük",
+			"nálunk", "nálatok", "náluk",
+			"hozzánk", "hozzátok", "hozzájuk",
+			"tőlünk", "tőletek", "tőlük",
+			"rajtunk", "rajtatok", "rajtuk",
+			"ránk", "rátok", "rájuk",
+			"rólunk", "rólatok", "róluk"
+	};
+
+	private static final Set<String> SINGULAR_PERSONAL_PRONOUNS_SET=new HashSet<String>();
+	private static final Set<String> PLURAL_PERSONAL_PRONOUNS_SET=new HashSet<String>();
+
+
 	//Is yourself always singular?
 	private static final String[] SINGULAR_PRONOUNS=new String[]{"i","he","she","it","me","my", "myself", "mine","him","his","himself","her","hers","herself","its","itself"};
 	private static final String[] PLURAL_PRONOUNS=new String[]{"we","our","ours","ourself","ourselves","yourselves","they","them","their","theirs","us", "themselves"};
@@ -264,25 +303,16 @@ public class Hungraian extends Language{
 		String[] additionalPronouns=new String[]{"you", "your", "yourself","yours"};
 		Collections.addAll(ALL_PRONOUNS,additionalPronouns);
 
-		//Personal pronouns
-//		for(String s:new String[]{"i","you","he","she","it","we","they"})
-//			PRONOUNS.add(s);
-//		//Reflexive pronouns 
-//		//What about like yourselves, ourselves, etc?
-//		for(String s:new String[]{"myself","yourself","himself","herself","itself","ourself","themself"})
-//			PRONOUNS.add(s);
-//		//Possessive pronouns
-//		//add mine, yours etc
-//		for(String s:new String[]{"my","your","his","her","our","their"})
-//			PRONOUNS.add(s);
+		// New collections:
+		Collections.addAll(SINGULAR_PERSONAL_PRONOUNS_SET,SINGULAR_PERSONAL_PRONOUNS);
+		Collections.addAll(PLURAL_PERSONAL_PRONOUNS_SET,PLURAL_PERSONAL_PRONOUNS);
+
 	}
-	
 	static class AliasStuff{
 		
 		public static boolean isAlias(Span ant,Span ana){
 			String antSFWTP=toSurfaceFormWithoutTrailingPossesives(ant);
 			String anaSFWTP=toSurfaceFormWithoutTrailingPossesives(ana);
-//			return comparePerson(antSFWTP.split(" "),anaSFWTP.split(" ")) || compareOrg(antSFWTP,anaSFWTP);// || antSFWTP.equalsIgnoreCase(anaSFWTP);
 			if(ant.ne==null || ana.ne==null || !ant.ne.getLabel().equals(ana.ne.getLabel()))
 				return false;
 			String neLbl=ant.ne.getLabel();	
@@ -423,7 +453,7 @@ public class Hungraian extends Language{
 	public String getDefaultMarkableExtractors() {
 		return "NT-NP,T-PRP,T-PRP$,NER-ALL";
 	}
-	
+
 	public void preprocessSentence(Sentence s){
 		if(s.forms[1].equals("Mm"))
 			s.tags[1]="UH";

@@ -192,12 +192,12 @@ public class Hungraian extends Language{
 		}
 	}
 
-	private static final Pattern DEMONSTRATIVE_PATTERN=Pattern.compile("^th(?:is|at|ose|ese)$",Pattern.CASE_INSENSITIVE);
 	private boolean isDemonstrative(Span s) {
 		int len=s.end-s.start+1;
 		if(len==1)
 			return false;
-		return DEMONSTRATIVE_PATTERN.matcher(s.s.forms[s.start]).matches();
+		String formLc=s.s.forms[s.start].toLowerCase();
+		return DEMONSTRATIVE_PRONOUNS_SET.contains(formLc);
 	}
 
 	private static final Pattern DEFINITE_PATTERN=Pattern.compile("^a(?:z)$",Pattern.CASE_INSENSITIVE);
@@ -270,8 +270,16 @@ public class Hungraian extends Language{
 			"rólunk", "rólatok", "róluk"
 	};
 
+
+	private static final String[] DEMONSTRATIVE_PRONOUNS=new String[]{
+			"ez", "emez", "ugyanez", "az", "amaz", "ugyanaz",
+			"ilyen", "efféle", "ekkora", "ugyanilyen", "ebbéli", "olyan", "afféle", "akkore", "ugyanolyan", "abbéli", "amekkora",
+			"ennyi", "ugyanennyi", "emennyi", "annyi", "ugyanannyi", "amannyi"
+	};
+
 	private static final Set<String> SINGULAR_PERSONAL_PRONOUNS_SET=new HashSet<String>();
 	private static final Set<String> PLURAL_PERSONAL_PRONOUNS_SET=new HashSet<String>();
+	private static final Set<String> DEMONSTRATIVE_PRONOUNS_SET=new HashSet<String>();
 
 
 	//Is yourself always singular?
@@ -306,6 +314,7 @@ public class Hungraian extends Language{
 		// New collections:
 		Collections.addAll(SINGULAR_PERSONAL_PRONOUNS_SET,SINGULAR_PERSONAL_PRONOUNS);
 		Collections.addAll(PLURAL_PERSONAL_PRONOUNS_SET,PLURAL_PERSONAL_PRONOUNS);
+		Collections.addAll(DEMONSTRATIVE_PRONOUNS_SET,DEMONSTRATIVE_PRONOUNS);
 
 	}
 	static class AliasStuff{

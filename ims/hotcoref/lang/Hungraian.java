@@ -96,9 +96,7 @@ public class Hungraian extends Language{
 	public String computeCleverString(Span sp) {
 		StringBuilder sb=new StringBuilder();
 		for(int i=sp.start;i<=sp.end;++i){
-			//XXX added "
-			if(sp.s.forms[i].equals("\"") || sp.s.tags[i].equals("DT") || sp.s.tags[i].equals("POS") ||sp.s.tags[i].equals(":") ||sp.s.tags[i].equals(".")||sp.s.tags[i].equals(","))
-//			if(sp.s.tags[i].equals("DT") || sp.s.tags[i].equals("POS") ||sp.s.tags[i].equals(":") ||sp.s.tags[i].equals(".")||sp.s.tags[i].equals(","))
+			if(sp.s.forms[i].equals("\"") ||sp.s.forms[i].equals(":") ||sp.s.forms[i].equals(".")||sp.s.forms[i].equals(","))
 				continue;
 			sb.append(sp.s.forms[i]).append(" ");
 		}

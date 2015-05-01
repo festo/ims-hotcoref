@@ -117,13 +117,6 @@ public class Hungraian extends Language{
 		s.gender=lookupGender(s);
 		s.number=lookupNumber(s);
 		s.isQuoted=isQuoted(s);
-		if(s.isPronoun){
-			s.semanticClass=pronounSemanticClassLookup(s.s.forms[s.hd]);
-		} else {
-			WordNetInterface wni=WordNetInterface.theInstance();
-			if(wni!=null)
-				s.semanticClass=wni.lookupSemanticClass(s.s.forms[s.hd]);
-		}
 	}
 
 	private boolean isQuoted(Span s) {
@@ -144,17 +137,6 @@ public class Hungraian extends Language{
 			}
 		}
 		return quoteBegin && quoteEnd;
-	}
-
-	private SemanticClass pronounSemanticClassLookup(String lcSurfaceForm) {
-		if(FEMALE_PRONOUNS_SET.contains(lcSurfaceForm))
-			return SemanticClass.Female;
-		if(MALE_PRONOUNS_SET.contains(lcSurfaceForm))
-			return SemanticClass.Male;
-		if (SINGULAR_PRONOUNS_SET.contains(lcSurfaceForm) && !lcSurfaceForm.startsWith("it"))
-			return SemanticClass.Person;
-		else
-			return SemanticClass.Unknown;
 	}
 
 	private Num lookupNumber(Span s) {
@@ -202,17 +184,7 @@ public class Hungraian extends Language{
 	}
 
 	private boolean isPronoun(Span s) {
-		return s.s.tags[s.hd].startsWith("PRP") || ALL_PRONOUNS.contains(s.s.forms[s.hd].toLowerCase());
-//		int len=s.end-s.start+1;
-//		if(len==1){
-//			if(ALL_PRONOUNS.contains(s.s.forms[s.start]))
-//				return true;
-//			return s.s.forms[s.start].equalsIgnoreCase("one") && s.s.tags[s.start].equals("PRP");
-//		} else if(len==2){
-//			return s.s.forms[s.start].equalsIgnoreCase("one") && s.s.forms[s.start+1].equals("'s");
-//		} else {
-//			return false;
-//		}
+		return s.s.tags[s.hd].startsWith("P##SubPOS=p") || ALL_PRONOUNS.contains(s.s.forms[s.hd].toLowerCase());
 	}
 
 	// Szemelyes nevmasok
@@ -250,6 +222,10 @@ public class Hungraian extends Language{
 			"rólunk", "rólatok", "róluk"
 	};
 
+	// Visszahato nevmasok
+	private static final String[] REFLEXIVE_PRONOUNS=new String[]{
+			"magam", "magad", "maga", "magunk", "magatok", "maguk"
+	};
 
 	private static final String[] DEMONSTRATIVE_PRONOUNS=new String[]{
 			"ez", "emez", "ugyanez", "az", "amaz", "ugyanaz",
@@ -259,42 +235,22 @@ public class Hungraian extends Language{
 
 	private static final Set<String> SINGULAR_PERSONAL_PRONOUNS_SET=new HashSet<String>();
 	private static final Set<String> PLURAL_PERSONAL_PRONOUNS_SET=new HashSet<String>();
+
+
 	private static final Set<String> DEMONSTRATIVE_PRONOUNS_SET=new HashSet<String>();
 
-
-	//Is yourself always singular?
-	private static final String[] SINGULAR_PRONOUNS=new String[]{"i","he","she","it","me","my", "myself", "mine","him","his","himself","her","hers","herself","its","itself"};
-	private static final String[] PLURAL_PRONOUNS=new String[]{"we","our","ours","ourself","ourselves","yourselves","they","them","their","theirs","us", "themselves"};
-	private static final String[] MALE_PRONOUNS=new String[]{"he","him","his","himself"};
-	private static final String[] FEMALE_PRONOUNS=new String[]{"she","her","hers","herself"};
-	private static final String[] NEUT_PRONOUNS=new String[]{"it","its"};
-	
-	private static final Set<String> SINGULAR_PRONOUNS_SET=new HashSet<String>();
-	private static final Set<String> PLURAL_PRONOUNS_SET=new HashSet<String>();
-	private static final Set<String> MALE_PRONOUNS_SET=new HashSet<String>();
-	private static final Set<String> FEMALE_PRONOUNS_SET=new HashSet<String>();
-	private static final Set<String> NEUT_PRONOUNS_SET=new HashSet<String>();
-	
 	public static final Set<String> ALL_PRONOUNS=new HashSet<String>();
 	static {
-		Collections.addAll(SINGULAR_PRONOUNS_SET,SINGULAR_PRONOUNS);
-		Collections.addAll(PLURAL_PRONOUNS_SET,PLURAL_PRONOUNS);
-		Collections.addAll(FEMALE_PRONOUNS_SET,FEMALE_PRONOUNS);
-		Collections.addAll(MALE_PRONOUNS_SET,MALE_PRONOUNS);
-		Collections.addAll(NEUT_PRONOUNS_SET,NEUT_PRONOUNS);
-		
-		//All below
-		Collections.addAll(ALL_PRONOUNS,SINGULAR_PRONOUNS);
-		Collections.addAll(ALL_PRONOUNS,PLURAL_PRONOUNS);
-		Collections.addAll(ALL_PRONOUNS,MALE_PRONOUNS);
-		Collections.addAll(ALL_PRONOUNS,FEMALE_PRONOUNS);
-		String[] additionalPronouns=new String[]{"you", "your", "yourself","yours"};
-		Collections.addAll(ALL_PRONOUNS,additionalPronouns);
-
-		// New collections:
 		Collections.addAll(SINGULAR_PERSONAL_PRONOUNS_SET,SINGULAR_PERSONAL_PRONOUNS);
 		Collections.addAll(PLURAL_PERSONAL_PRONOUNS_SET,PLURAL_PERSONAL_PRONOUNS);
+
 		Collections.addAll(DEMONSTRATIVE_PRONOUNS_SET,DEMONSTRATIVE_PRONOUNS);
+
+		//All below
+		Collections.addAll(ALL_PRONOUNS,SINGULAR_PERSONAL_PRONOUNS);
+		Collections.addAll(ALL_PRONOUNS,PLURAL_PERSONAL_PRONOUNS);
+		Collections.addAll(ALL_PRONOUNS,REFLEXIVE_PRONOUNS);
+		Collections.addAll(ALL_PRONOUNS,DEMONSTRATIVE_PRONOUNS);
 
 	}
 	static class AliasStuff{

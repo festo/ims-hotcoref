@@ -168,28 +168,8 @@ public class Hungraian extends Language{
 		return lookup.lookupNum(s);
 	}
 
-	private static final Pattern MASC_TITLE_PATTERN=Pattern.compile("^(?:Mr\\.?|Mister)$");
-	private static final Pattern FEM_TITLE_PATTERN=Pattern.compile("^M(?:r?s\\.?|iss)$");
 	private Gender lookupGender(Span s) {
-		if(s.isPronoun){
-			String formLc=s.s.forms[s.start].toLowerCase();
-			if(MALE_PRONOUNS_SET.contains(formLc))
-				return Gender.Masc;
-			if(FEMALE_PRONOUNS_SET.contains(formLc))
-				return Gender.Fem;
-			if(NEUT_PRONOUNS_SET.contains(formLc))
-				return Gender.Neut;
-			return Gender.Unknown;
-		} else {
-			if(s.isProperName){ //Might be a title of a person
-				if(MASC_TITLE_PATTERN.matcher(s.s.forms[s.start]).matches())
-					return Gender.Masc;
-				if(FEM_TITLE_PATTERN.matcher(s.s.forms[s.start]).matches())
-					return Gender.Fem;
-			}
-			//Otherwise we try the gender lookup
-			return lookup.lookupGen(s);
-		}
+		return lookup.lookupGen(s);
 	}
 
 	private boolean isDemonstrative(Span s) {

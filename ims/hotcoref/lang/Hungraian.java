@@ -110,26 +110,46 @@ public class Hungraian extends Language{
 
 	@Override
 	public void computeAtomicSpanFeatures(Span s) {
-		s.isProperName=isProperName(s);
-		s.isPronoun=isPronoun(s);
-		s.isDefinite=isDefinite(s);
-		s.isQuoted = isMentionByWordClass(s);
+		s.isProperName=isProperName(s); // TypeCoarse
+		s.isPronoun=isPronoun(s);  // PronounForm
+		s.gender=lookupGender(s);
+		s.number=lookupNumber(s);
+		s.isQuoted = isQuoted(s);
 	}
 
-	private boolean isMentionByWordClass(Span s) {
-		return 	s.s.tags[s.hd].startsWith("N") ||
-				s.s.tags[s.hd].startsWith("P") ||
-				s.s.tags[s.hd].startsWith("M") ||
-				s.s.tags[s.hd].startsWith("A") ||
-				s.s.tags[s.hd].startsWith("R##SubPOS=l");
-	}
-
-	private static final Pattern DEFINITE_PATTERN=Pattern.compile("^a(?:z)$",Pattern.CASE_INSENSITIVE);
-	private boolean isDefinite(Span s) {
-		int len=s.end-s.start+1;
-		if(len==1)
+	private boolean isQuoted(Span s) {
+		boolean quoteBegin=false;
+		boolean quoteEnd=false;
+		for(int i=s.start-1;i>0;--i){
+			if(s.s.forms[i].equals("\"")){
+				quoteBegin=true;
+				break;
+			}
+		}
+		if(!quoteBegin)
 			return false;
-		return DEFINITE_PATTERN.matcher(s.s.forms[s.start]).matches();
+		for(int i=s.end+1;i<s.s.forms.length;++i){
+			if(s.s.forms[i].equals("\"")){
+				quoteEnd=true;
+				break;
+			}
+		}
+		return quoteBegin && quoteEnd;
+	}
+
+	private Num lookupNumber(Span s) {
+		if(s.isPronoun){
+			String formLc=s.s.forms[s.start].toLowerCase();
+			if(SINGULAR_PERSONAL_PRONOUNS_SET.contains(formLc))
+				return Num.Sin;
+			if(PLURAL_PERSONAL_PRONOUNS_SET.contains(formLc))
+				return Num.Plu;
+		}
+		return lookup.lookupNum(s);
+	}
+
+	private Gender lookupGender(Span s) {
+		return lookup.lookupGen(s);
 	}
 
 	private boolean isProperName(Span s) {

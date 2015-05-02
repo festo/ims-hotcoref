@@ -36,3 +36,4 @@ MToHdFormMFromSubStringMatch+MToMTypeCoarse+MFromMTypeCoarse
 MFromHdFormMToSubStringMatch+MToMTypeCoarse+MFromMTypeCoarse
 MToHdFormMFromSubStringMatch+MFromHdFormMToSubStringMatch+MToMTypeCoarse+MFromMTypeCoarse
 MToCoordinationBOW
+MToQuoted+MToPronounForm+MFromDominatingVerb

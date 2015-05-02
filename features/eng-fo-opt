@@ -1,7 +1,6 @@
 MToHdForm+MFromHdForm                                           32
 MToSFForm                                                       16
 MFromMToDistanceBuckets+MToMTypeCoarse                                  7
-MFromMToSameSpeaker+MFromPronounForm+MToPronounForm                     34
 MFromWholeSpanForm                                              18
 MFromMToCFGSSPath+MToPronounForm                                        35
 MFromCFGParentNodeCategory                                      7
@@ -20,11 +19,8 @@ MFromMToDistanceBuckets+MToPronounForm                                  20
 Genre+MFromPronounForm+MToPronounForm                           36
 MFromHdINForm+MFromHdPos                                        22
 MFromSFoPos+MToPronounForm                                      22
-MFromGender+MToPronounForm                                      19
 MFromMToMentionDistBuckets+MToMTypeCoarse                               7
 MFromMToCleverStringMatch+MFromMTypeCoarse+MFromHdForm+MToHdForm        37
-MFromMTypeCoarse+MToAnaphoricity
-MToGender+MFromPronounForm
 MFromMToCFGSSPosPath
 MToHdIPPPos+MToHdForm
 MToParentNodeCFGSubCat+MFromMToMentionDistBuckets+MFromMTypeCoarse

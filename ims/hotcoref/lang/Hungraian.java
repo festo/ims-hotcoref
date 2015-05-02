@@ -115,6 +115,15 @@ public class Hungraian extends Language{
 		s.gender=lookupGender(s);
 		s.number=lookupNumber(s);
 		s.isQuoted = isQuoted(s);
+		s.addedByTokenType = addedByTokenType(s);
+	}
+
+	private boolean addedByTokenType(Span s) {
+		return 	s.s.tags[s.hd].startsWith("N") ||
+				s.s.tags[s.hd].startsWith("P") ||
+				s.s.tags[s.hd].startsWith("M") ||
+				s.s.tags[s.hd].startsWith("A") ||
+				s.s.tags[s.hd].startsWith("R##SubPOS=l");
 	}
 
 	private boolean isQuoted(Span s) {

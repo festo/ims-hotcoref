@@ -30,6 +30,7 @@ public class Span implements Comparable<Span> {
 	public boolean isDefinite;
 	public boolean isDemonstrative;
 	public boolean isQuoted;
+	public boolean addedByTokenType;
 
 	public Gender gender=Gender.Unknown;
 	public Num number=Num.Unknown;

@@ -157,7 +157,7 @@ public class FeatureSet implements Serializable {
 	private static final Pattern CFG_PATH_PATTERN=Pattern.compile(SPAN+SPAN+"CFG(SS|DS)Path");
 	private static final Pattern CFG_TRAIT_PATH_PATTERN=Pattern.compile(SPAN+SPAN+"CFG(SS|DS)"+TRAIT+"Path");
 	private static final Pattern CFG_NODE_CATEGORY_PATTERN=Pattern.compile(SPAN+"CFG"+CFG_TARGET+"Category");
-	private static final Pattern GENDER_NE_QUOTED_DOMVERB_HDSUBSTRMATCH_ANAPHORICITY_NUMBER_PATTERN=Pattern.compile(SPAN+"(Gender|NamedEntity|Quoted|DominatingVerb|Anaphoricity|Number|CoordinationBOW)");
+	private static final Pattern GENDER_NE_QUOTED_DOMVERB_HDSUBSTRMATCH_ANAPHORICITY_NUMBER_PATTERN=Pattern.compile(SPAN+"(Gender|NamedEntity|Quoted|DominatingVerb|Anaphoricity|Number|CoordinationBOW|TokenType)");
 	private static final Pattern SPAN_HD_SUBSTRING_MATCH_PATTERN=Pattern.compile(SPAN+"HdForm"+SPAN+"SubStringMatch");
 	private static final Pattern MENTION_DIST_PATTERN=Pattern.compile(SPAN+SPAN+"MentionDist"+BUCKETS);
 	private static final Pattern EDIT_DISTANCE_PATTERN=Pattern.compile(SPAN+SPAN+"(WholeSpan(?:Token)?)"+TRAIT+"EditDistance"+BUCKETS);
@@ -320,6 +320,8 @@ public class FeatureSet implements Serializable {
 				return new F_Number(tse);
 			} else if(t.equals("CoordinationBOW")){
 				return new F_CoordinationBOW(tse);
+			} else if(t.equals("TokenType")){
+				return new F_TokenType(tse);
 			}
 			throw new Error("not implemented");
 		}

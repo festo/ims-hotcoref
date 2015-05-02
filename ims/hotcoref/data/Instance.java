@@ -48,6 +48,7 @@ public class Instance {
 	public byte[]   anaphoricityBucketed;
 	public byte[]   namedEntity;
 	public byte[]   quoted;
+	public byte[]   addedByTokenType;
 	public byte[][] mentionTypes;
 	public byte[] 	gender;
 	public byte[]   number;
